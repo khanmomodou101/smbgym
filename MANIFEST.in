@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include smbgym *.css
+recursive-include smbgym *.csv
+recursive-include smbgym *.html
+recursive-include smbgym *.ico
+recursive-include smbgym *.js
+recursive-include smbgym *.json
+recursive-include smbgym *.md
+recursive-include smbgym *.png
+recursive-include smbgym *.py
+recursive-include smbgym *.svg
+recursive-include smbgym *.txt
+recursive-exclude smbgym *.pyc
