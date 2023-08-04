@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:slot_name",
+ "creation": "2023-07-27 05:02:58.716224",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "slot",
+  "slot_name",
+  "form"
+ ],
+ "fields": [
+  {
+   "fieldname": "slot",
+   "fieldtype": "Data",
+   "label": "Slot",
+   "unique": 1
+  },
+  {
+   "fetch_from": "form.slot",
+   "fieldname": "slot_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Slot Name",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "form",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Form",
+   "options": "Gym Time Slot"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-27 05:06:34.921129",
+ "modified_by": "Administrator",
+ "module": "Smbgym",
+ "name": "Gym Time Slot",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:WF-GM-{####}",
+ "creation": "2023-07-27 04:17:55.142088",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "column_break_rigab",
+  "member_name",
+  "membership_details_section",
+  "membership_plan",
+  "valid_number_of_days",
+  "start_date",
+  "trainer",
+  "column_break_yg738",
+  "price",
+  "time_slot",
+  "amended_from",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member ",
+   "options": "Gym Member"
+  },
+  {
+   "fetch_from": "member.full_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Member Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "membership_plan",
+   "fieldtype": "Link",
+   "label": "Membership Plan",
+   "options": "Gym Membership Plan"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "time_slot",
+   "fieldtype": "Link",
+   "label": "Time Slot",
+   "options": "Gym Time Slot"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "Gym Trainer"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym  Membership",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "member.full_name",
+   "fieldname": "column_break_rigab",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "membership_details_section",
+   "fieldtype": "Section Break",
+   "label": "Membership Details"
+  },
+  {
+   "fieldname": "column_break_yg738",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "membership_plan.price",
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "member.image",
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fetch_from": "membership_plan.duration",
+   "fieldname": "valid_number_of_days",
+   "fieldtype": "Data",
+   "label": "Valid Number of Days"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-04 07:20:05.752525",
+ "modified_by": "Administrator",
+ "module": "Smbgym",
+ "name": "Gym  Membership",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
